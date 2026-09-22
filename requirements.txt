@@ -8,3 +8,5 @@ pandas
 geopandas
 h3
 pyproj
+streamlit
+pydeck
