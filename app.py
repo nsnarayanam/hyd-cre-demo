@@ -1,7 +1,8 @@
 import json, pathlib
 import pandas as pd
 import streamlit as st
-import pydeck as pdk
+import folium
+from streamlit_folium import st_folium
 
 st.set_page_config(page_title="Anvīkṣaṇa CRE demo, Hyderabad", layout="wide")
 
@@ -62,14 +63,19 @@ with left:
     for f in cells["features"]:
         if f["properties"]["h3"] in parcel_cells:
             f["properties"]["line"] = [27, 42, 74, 255]
-    # centre
     xs = [c[0] for f in cells["features"] for c in f["geometry"]["coordinates"][0]]
     ys = [c[1] for f in cells["features"] for c in f["geometry"]["coordinates"][0]]
-    view = pdk.ViewState(latitude=sum(ys) / len(ys), longitude=sum(xs) / len(xs), zoom=13.2, pitch=0)
-    layer = pdk.Layer("GeoJsonLayer", cells, stroked=True, filled=True, get_fill_color="properties.fill",
-                      get_line_color="properties.line", line_width_min_pixels=1, pickable=True)
-    st.pydeck_chart(pdk.Deck(layers=[layer], initial_view_state=view, map_style="light",
-                             tooltip={"text": "cell {h3}\nbuilt 2026: {built_t1}\nbuilt 2023: {built_t0}\nconstruction: {construction}\nlow-lying: {low_lying}"}))
+    m = folium.Map(location=[sum(ys) / len(ys), sum(xs) / len(xs)], zoom_start=14, tiles="OpenStreetMap", control_scale=True)
+    def style(f):
+        p = f["properties"]
+        r, g, b, a = p["fill"]; lr, lg, lb, la = p["line"]
+        return {"fillColor": f"#{r:02x}{g:02x}{b:02x}", "fillOpacity": a / 255, "color": f"#{lr:02x}{lg:02x}{lb:02x}", "weight": 2 if la == 255 else 0.6, "opacity": la / 255}
+    folium.GeoJson(cells, style_function=style,
+                   tooltip=folium.GeoJsonTooltip(fields=["h3", "built_t1", "built_t0", "construction", "low_lying"],
+                                                 aliases=["cell", "built 2026", "built 2023", "construction", "low-lying"], localize=True)).add_to(m)
+    folium.TileLayer("CartoDB positron", name="Light").add_to(m)
+    folium.LayerControl().add_to(m)
+    st_folium(m, width=None, height=520, returned_objects=[])
     st.caption("H3 resolution 9 cells, 2 km around the asset. Dark outline: parcel cells. Gold intensity: selected layer.")
 
 # ---------- asset panel ----------

@@ -9,4 +9,5 @@ geopandas
 h3
 pyproj
 streamlit
-pydeck
+folium
+streamlit-folium
