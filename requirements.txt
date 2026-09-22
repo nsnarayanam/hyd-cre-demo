@@ -1,0 +1,10 @@
+pystac-client
+odc-stac
+rasterio
+xarray
+numpy
+scipy
+pandas
+geopandas
+h3
+pyproj
