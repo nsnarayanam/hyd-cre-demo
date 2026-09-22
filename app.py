@@ -26,7 +26,9 @@ profiles = {a: json.load(open(OUT / f"{a}_profile.json")) for a in assets}
 c1, c2, c3, c4 = st.columns(4)
 def pick(a, fig):
     r = prof[(prof.asset_id == a) & (prof.figure == fig)]
-    return r.value.iloc[0] if len(r) else None
+    if not len(r): return None
+    v = pd.to_numeric(r.value.iloc[0], errors="coerce")
+    return None if pd.isna(v) else float(v)
 built = [pick(a, "built_up_change_2km_36m_pct_points") for a in assets]
 constr = [pick(a, "construction_sites_1km_12m") for a in assets]
 low = [pick(a, "low_lying_cells") for a in assets]
