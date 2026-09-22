@@ -1,0 +1,124 @@
+{
+  "asset_id": "HYD-004",
+  "name": "Kondapur, Botanical Garden road",
+  "use": "Mixed-use, residential-led",
+  "h3_cells": [
+    "8960a24b523ffff",
+    "8960a24b533ffff",
+    "8960a24b537ffff"
+  ],
+  "label": "DEMONSTRATION PROFILE, not client data",
+  "figures": {
+    "built_up_change_2km_36m_pct_points": {
+      "value": 3.8,
+      "unit": "percentage points of built-up share, 2 km radius",
+      "provenance": {
+        "model": "lc-demo-1.0",
+        "rule": "NDBI>0.05 & NDVI<0.25 => built; NDVI>0.45 => vegetation; NDWI>0.2 => water; else bare/mixed",
+        "scenes": [
+          "S2B_43QHV_20231025_0_L2A",
+          "S2B_44QKE_20231025_0_L2A",
+          "S2A_43QHV_20231020_0_L2A",
+          "S2A_44QKE_20231020_0_L2A",
+          "S2B_43QHV_20231015_0_L2A",
+          "S2B_44QKE_20231015_0_L2A",
+          "S2A_43QHV_20231010_0_L2A",
+          "S2A_44QKE_20231010_0_L2A",
+          "S2B_43QHV_20231005_0_L2A",
+          "S2B_44QKE_20231005_0_L2A",
+          "S2B_43QHV_20260810_0_L2A",
+          "S2C_43QHV_20260616_0_L2A",
+          "S2C_44QKE_20260616_0_L2A",
+          "S2B_43QHV_20260611_0_L2A",
+          "S2B_44QKE_20260611_0_L2A",
+          "S2C_43QHV_20260606_0_L2A",
+          "S2C_44QKE_20260606_0_L2A",
+          "S2B_43QHV_20260601_0_L2A",
+          "S2B_44QKE_20260601_0_L2A"
+        ],
+        "window": "2023-08/2023-10 vs 2026-06/2026-08",
+        "computed_at": "2026-09-22T14:18:37+00:00",
+        "pipeline_hash": "b2087c9e78e5"
+      }
+    },
+    "flood_extent_overlap_oct2020_pct": {
+      "value": 0.0,
+      "unit": "% of parcel cells flooded in Oct 2020 event",
+      "provenance": {
+        "model": "fl-demo-1.0",
+        "rule": "S1 VV dB: flood if (event - baseline) < -3 dB and event < -15 dB; majority per cell",
+        "scenes": [
+          "S1A_IW_GRDH_1SDV_20201021T003858_20201021T003923_034887_041153",
+          "S1A_IW_GRDH_1SDV_20200424T003849_20200424T003914_032262_03BB7A",
+          "S1A_IW_GRDH_1SDV_20200412T003849_20200412T003914_032087_03B557",
+          "S1A_IW_GRDH_1SDV_20200331T003848_20200331T003913_031912_03AF2C",
+          "S1A_IW_GRDH_1SDV_20200319T003846_20200319T003911_031737_03A905",
+          "S1A_IW_GRDH_1SDV_20200307T003843_20200307T003908_031562_03A2EE"
+        ],
+        "window": "event 2020-10-13/22 vs baseline 2020-03/04",
+        "computed_at": "2026-09-22T14:18:37+00:00",
+        "pipeline_hash": "b2087c9e78e5"
+      }
+    },
+    "low_lying_cells": {
+      "value": 0,
+      "unit": "parcel cells >2 m below 1 km neighbourhood median",
+      "provenance": {
+        "model": "ll-demo-1.0",
+        "rule": "Copernicus DEM GLO-30: cell mean elevation < (1 km neighbourhood median - 2 m)",
+        "scenes": [
+          "Copernicus_DSM_COG_10_N17_00_E078_00_DEM"
+        ],
+        "window": "static",
+        "computed_at": "2026-09-22T14:18:37+00:00",
+        "pipeline_hash": "b2087c9e78e5"
+      }
+    },
+    "construction_sites_1km_12m": {
+      "value": 2,
+      "unit": "clustered change sites within 1 km, last 12 months",
+      "provenance": {
+        "model": "cn-demo-1.0",
+        "rule": "dNDBI > +0.10 and dNDVI < -0.15 over 12 months; connected cells >= 2 => one site",
+        "scenes": [
+          "S2B_43QHV_20250606_0_L2A",
+          "S2B_44QKE_20250606_0_L2A",
+          "S2B_43QHV_20260810_0_L2A",
+          "S2C_43QHV_20260616_0_L2A",
+          "S2C_44QKE_20260616_0_L2A",
+          "S2B_43QHV_20260611_0_L2A",
+          "S2B_44QKE_20260611_0_L2A",
+          "S2C_43QHV_20260606_0_L2A",
+          "S2C_44QKE_20260606_0_L2A",
+          "S2B_43QHV_20260601_0_L2A",
+          "S2B_44QKE_20260601_0_L2A"
+        ],
+        "window": "2025-06/08 vs 2026-06/08",
+        "computed_at": "2026-09-22T14:18:37+00:00",
+        "pipeline_hash": "b2087c9e78e5"
+      }
+    },
+    "land_use_class": {
+      "value": "bare/mixed",
+      "unit": "modal class over parcel cells",
+      "provenance": {
+        "model": "lc-demo-1.0",
+        "rule": "NDBI>0.05 & NDVI<0.25 => built; NDVI>0.45 => vegetation; NDWI>0.2 => water; else bare/mixed",
+        "scenes": [
+          "S2B_43QHV_20260810_0_L2A",
+          "S2C_43QHV_20260616_0_L2A",
+          "S2C_44QKE_20260616_0_L2A",
+          "S2B_43QHV_20260611_0_L2A",
+          "S2B_44QKE_20260611_0_L2A",
+          "S2C_43QHV_20260606_0_L2A",
+          "S2C_44QKE_20260606_0_L2A",
+          "S2B_43QHV_20260601_0_L2A",
+          "S2B_44QKE_20260601_0_L2A"
+        ],
+        "window": "2026-06/2026-08",
+        "computed_at": "2026-09-22T14:18:37+00:00",
+        "pipeline_hash": "b2087c9e78e5"
+      }
+    }
+  }
+}

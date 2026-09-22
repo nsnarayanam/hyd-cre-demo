@@ -1,0 +1,71 @@
+{
+  "run": "2026-09-22T14:18:37+00:00",
+  "pipeline_hash": "b2087c9e78e5",
+  "aoi_bbox": [
+    78.32,
+    17.4,
+    78.4,
+    17.47
+  ],
+  "h3_res": 9,
+  "scenes": {
+    "s2_t0": [
+      "S2B_43QHV_20231025_0_L2A",
+      "S2B_44QKE_20231025_0_L2A",
+      "S2A_43QHV_20231020_0_L2A",
+      "S2A_44QKE_20231020_0_L2A",
+      "S2B_43QHV_20231015_0_L2A",
+      "S2B_44QKE_20231015_0_L2A",
+      "S2A_43QHV_20231010_0_L2A",
+      "S2A_44QKE_20231010_0_L2A",
+      "S2B_43QHV_20231005_0_L2A",
+      "S2B_44QKE_20231005_0_L2A"
+    ],
+    "s2_t1": [
+      "S2B_43QHV_20260810_0_L2A",
+      "S2C_43QHV_20260616_0_L2A",
+      "S2C_44QKE_20260616_0_L2A",
+      "S2B_43QHV_20260611_0_L2A",
+      "S2B_44QKE_20260611_0_L2A",
+      "S2C_43QHV_20260606_0_L2A",
+      "S2C_44QKE_20260606_0_L2A",
+      "S2B_43QHV_20260601_0_L2A",
+      "S2B_44QKE_20260601_0_L2A"
+    ],
+    "s2_minus12": [
+      "S2B_43QHV_20250606_0_L2A",
+      "S2B_44QKE_20250606_0_L2A"
+    ],
+    "s1_event": [
+      "S1A_IW_GRDH_1SDV_20201021T003858_20201021T003923_034887_041153"
+    ],
+    "s1_baseline": [
+      "S1A_IW_GRDH_1SDV_20200424T003849_20200424T003914_032262_03BB7A",
+      "S1A_IW_GRDH_1SDV_20200412T003849_20200412T003914_032087_03B557",
+      "S1A_IW_GRDH_1SDV_20200331T003848_20200331T003913_031912_03AF2C",
+      "S1A_IW_GRDH_1SDV_20200319T003846_20200319T003911_031737_03A905",
+      "S1A_IW_GRDH_1SDV_20200307T003843_20200307T003908_031562_03A2EE"
+    ],
+    "dem": [
+      "Copernicus_DSM_COG_10_N17_00_E078_00_DEM"
+    ]
+  },
+  "models": {
+    "lc": {
+      "id": "lc-demo-1.0",
+      "desc": "NDBI>0.05 & NDVI<0.25 => built; NDVI>0.45 => vegetation; NDWI>0.2 => water; else bare/mixed"
+    },
+    "fl": {
+      "id": "fl-demo-1.0",
+      "desc": "S1 VV dB: flood if (event - baseline) < -3 dB and event < -15 dB; majority per cell"
+    },
+    "ll": {
+      "id": "ll-demo-1.0",
+      "desc": "Copernicus DEM GLO-30: cell mean elevation < (1 km neighbourhood median - 2 m)"
+    },
+    "cn": {
+      "id": "cn-demo-1.0",
+      "desc": "dNDBI > +0.10 and dNDVI < -0.15 over 12 months; connected cells >= 2 => one site"
+    }
+  }
+}
