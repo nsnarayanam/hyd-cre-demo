@@ -1,21 +1,21 @@
 asset_id,name,figure,value,unit,model,n_scenes,computed_at
-HYD-001,"Financial District, Nanakramguda",built_up_change_2km_36m_pct_points,15.9,"percentage points of built-up share, 2 km radius",lc-demo-1.0,19,2026-09-22T14:18:37+00:00
-HYD-001,"Financial District, Nanakramguda",flood_extent_overlap_oct2020_pct,0.0,% of parcel cells flooded in Oct 2020 event,fl-demo-1.0,6,2026-09-22T14:18:37+00:00
-HYD-001,"Financial District, Nanakramguda",low_lying_cells,2,parcel cells >2 m below 1 km neighbourhood median,ll-demo-1.0,1,2026-09-22T14:18:37+00:00
-HYD-001,"Financial District, Nanakramguda",construction_sites_1km_12m,1,"clustered change sites within 1 km, last 12 months",cn-demo-1.0,11,2026-09-22T14:18:37+00:00
-HYD-001,"Financial District, Nanakramguda",land_use_class,bare/mixed,modal class over parcel cells,lc-demo-1.0,9,2026-09-22T14:18:37+00:00
-HYD-002,Khajaguda lake edge,built_up_change_2km_36m_pct_points,10.9,"percentage points of built-up share, 2 km radius",lc-demo-1.0,19,2026-09-22T14:18:37+00:00
-HYD-002,Khajaguda lake edge,flood_extent_overlap_oct2020_pct,0.0,% of parcel cells flooded in Oct 2020 event,fl-demo-1.0,6,2026-09-22T14:18:37+00:00
-HYD-002,Khajaguda lake edge,low_lying_cells,2,parcel cells >2 m below 1 km neighbourhood median,ll-demo-1.0,1,2026-09-22T14:18:37+00:00
-HYD-002,Khajaguda lake edge,construction_sites_1km_12m,0,"clustered change sites within 1 km, last 12 months",cn-demo-1.0,11,2026-09-22T14:18:37+00:00
-HYD-002,Khajaguda lake edge,land_use_class,bare/mixed,modal class over parcel cells,lc-demo-1.0,9,2026-09-22T14:18:37+00:00
-HYD-003,"HITEC City, Madhapur",built_up_change_2km_36m_pct_points,7.0,"percentage points of built-up share, 2 km radius",lc-demo-1.0,19,2026-09-22T14:18:37+00:00
-HYD-003,"HITEC City, Madhapur",flood_extent_overlap_oct2020_pct,0.0,% of parcel cells flooded in Oct 2020 event,fl-demo-1.0,6,2026-09-22T14:18:37+00:00
-HYD-003,"HITEC City, Madhapur",low_lying_cells,1,parcel cells >2 m below 1 km neighbourhood median,ll-demo-1.0,1,2026-09-22T14:18:37+00:00
-HYD-003,"HITEC City, Madhapur",construction_sites_1km_12m,2,"clustered change sites within 1 km, last 12 months",cn-demo-1.0,11,2026-09-22T14:18:37+00:00
-HYD-003,"HITEC City, Madhapur",land_use_class,built,modal class over parcel cells,lc-demo-1.0,9,2026-09-22T14:18:37+00:00
-HYD-004,"Kondapur, Botanical Garden road",built_up_change_2km_36m_pct_points,3.8,"percentage points of built-up share, 2 km radius",lc-demo-1.0,19,2026-09-22T14:18:37+00:00
-HYD-004,"Kondapur, Botanical Garden road",flood_extent_overlap_oct2020_pct,0.0,% of parcel cells flooded in Oct 2020 event,fl-demo-1.0,6,2026-09-22T14:18:37+00:00
-HYD-004,"Kondapur, Botanical Garden road",low_lying_cells,0,parcel cells >2 m below 1 km neighbourhood median,ll-demo-1.0,1,2026-09-22T14:18:37+00:00
-HYD-004,"Kondapur, Botanical Garden road",construction_sites_1km_12m,2,"clustered change sites within 1 km, last 12 months",cn-demo-1.0,11,2026-09-22T14:18:37+00:00
-HYD-004,"Kondapur, Botanical Garden road",land_use_class,bare/mixed,modal class over parcel cells,lc-demo-1.0,9,2026-09-22T14:18:37+00:00
+HYD-001,"Financial District, Nanakramguda",built_up_change_2km_36m_pct_points,15.9,"percentage points of built-up share, 2 km radius",lc-demo-1.0,19,2026-09-22T14:27:08+00:00
+HYD-001,"Financial District, Nanakramguda",flood_extent_overlap_oct2020_pct,0.0,% of parcel cells flooded in Oct 2020 event,fl-demo-1.0,6,2026-09-22T14:27:08+00:00
+HYD-001,"Financial District, Nanakramguda",low_lying_cells,2,parcel cells >2 m below 1 km neighbourhood median,ll-demo-1.0,1,2026-09-22T14:27:08+00:00
+HYD-001,"Financial District, Nanakramguda",construction_sites_1km_12m,1,"clustered change sites within 1 km, last 12 months",cn-demo-1.0,11,2026-09-22T14:27:08+00:00
+HYD-001,"Financial District, Nanakramguda",land_use_class,bare/mixed,modal class over parcel cells,lc-demo-1.0,9,2026-09-22T14:27:08+00:00
+HYD-002,Khajaguda lake edge,built_up_change_2km_36m_pct_points,10.9,"percentage points of built-up share, 2 km radius",lc-demo-1.0,19,2026-09-22T14:27:08+00:00
+HYD-002,Khajaguda lake edge,flood_extent_overlap_oct2020_pct,0.0,% of parcel cells flooded in Oct 2020 event,fl-demo-1.0,6,2026-09-22T14:27:08+00:00
+HYD-002,Khajaguda lake edge,low_lying_cells,2,parcel cells >2 m below 1 km neighbourhood median,ll-demo-1.0,1,2026-09-22T14:27:08+00:00
+HYD-002,Khajaguda lake edge,construction_sites_1km_12m,0,"clustered change sites within 1 km, last 12 months",cn-demo-1.0,11,2026-09-22T14:27:08+00:00
+HYD-002,Khajaguda lake edge,land_use_class,bare/mixed,modal class over parcel cells,lc-demo-1.0,9,2026-09-22T14:27:08+00:00
+HYD-003,"HITEC City, Madhapur",built_up_change_2km_36m_pct_points,7.0,"percentage points of built-up share, 2 km radius",lc-demo-1.0,19,2026-09-22T14:27:08+00:00
+HYD-003,"HITEC City, Madhapur",flood_extent_overlap_oct2020_pct,0.0,% of parcel cells flooded in Oct 2020 event,fl-demo-1.0,6,2026-09-22T14:27:08+00:00
+HYD-003,"HITEC City, Madhapur",low_lying_cells,1,parcel cells >2 m below 1 km neighbourhood median,ll-demo-1.0,1,2026-09-22T14:27:08+00:00
+HYD-003,"HITEC City, Madhapur",construction_sites_1km_12m,2,"clustered change sites within 1 km, last 12 months",cn-demo-1.0,11,2026-09-22T14:27:08+00:00
+HYD-003,"HITEC City, Madhapur",land_use_class,built,modal class over parcel cells,lc-demo-1.0,9,2026-09-22T14:27:08+00:00
+HYD-004,"Kondapur, Botanical Garden road",built_up_change_2km_36m_pct_points,3.8,"percentage points of built-up share, 2 km radius",lc-demo-1.0,19,2026-09-22T14:27:08+00:00
+HYD-004,"Kondapur, Botanical Garden road",flood_extent_overlap_oct2020_pct,0.0,% of parcel cells flooded in Oct 2020 event,fl-demo-1.0,6,2026-09-22T14:27:08+00:00
+HYD-004,"Kondapur, Botanical Garden road",low_lying_cells,0,parcel cells >2 m below 1 km neighbourhood median,ll-demo-1.0,1,2026-09-22T14:27:08+00:00
+HYD-004,"Kondapur, Botanical Garden road",construction_sites_1km_12m,2,"clustered change sites within 1 km, last 12 months",cn-demo-1.0,11,2026-09-22T14:27:08+00:00
+HYD-004,"Kondapur, Botanical Garden road",land_use_class,bare/mixed,modal class over parcel cells,lc-demo-1.0,9,2026-09-22T14:27:08+00:00
