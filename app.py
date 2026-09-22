@@ -73,8 +73,6 @@ with left:
     folium.GeoJson(cells, style_function=style,
                    tooltip=folium.GeoJsonTooltip(fields=["h3", "built_t1", "built_t0", "construction", "low_lying"],
                                                  aliases=["cell", "built 2026", "built 2023", "construction", "low-lying"], localize=True)).add_to(m)
-    folium.TileLayer("CartoDB positron", name="Light").add_to(m)
-    folium.LayerControl().add_to(m)
     st_folium(m, width=None, height=520, returned_objects=[])
     st.caption("H3 resolution 9 cells, 2 km around the asset. Dark outline: parcel cells. Gold intensity: selected layer.")
 
